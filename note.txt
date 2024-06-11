@@ -1,0 +1,267 @@
+ <style>
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
+</style>
+
+<div class="vl"></div>
+<i class="fa fa-search" aria-hidden="true"></i>
+<i class="fa fa-phone" aria-hidden="true"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+https://www.figma.com/design/ASfwERsjFzskvzV9PSN0fy/ECOMMERCE-APP?node-id=0-87&t=RmfQ7eF64X51kHBX-0
+
+width: 119px;
+height: 119px;
+gap: 0px;
+opacity: 0px;
+
+49A62C green
+
+width: 24px;
+height: 24px;
+top: 6.32px;
+gap: 0px;
+opacity: 0px;
+
+Weight
+600
+Size
+16px
+Line height
+24px
+
+//styleName: Body 1(Semi-bold);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+
+https://www.figma.com/file/ASfwERsjFzskvzV9PSN0fy/image/4fa32c7ab1bbcc7a832bf6d8f8a6a91b4e37f095
+
+Taste the Difference: Welcome to
+TASTE HEAVEN
+
+Delight your senses with our flavorful dishes, warm atmosphere,
+and impeccable service. Join us for a memorable dining adventure
+ today.
+
+ width: 130px;
+height: 130px;
+top: 71px;
+gap: 0px;
+opacity: 0px;
+
+//styleName: Heading 1(Bold);
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 700;
+line-height: 40px;
+text-align: center;
+
+//styleName: Heading 3(Semi-Bold);
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+text-align: center;
+
+width: Hug (135px)px;
+height: Fixed (48px)px;
+padding: 12px 19px 12px 19px;
+gap: 10px;
+border-radius: 8px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+width: 321px;
+height: 48px;
+gap: 0px;
+opacity: 0px;
+
+//styleName: Body 1(Semi-bold);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+
+width: 42.4px;
+height: 8px;
+gap: 0px;
+border-radius: 5px 0px 0px 0px;
+opacity: 0px;
+
+width: 8px;
+height: 8px;
+left: 52.4px;
+gap: 0px;
+opacity: 0px;
+
+width: 65px;
+height: 8px;
+top: 381px;
+left: 597px;
+padding: 0px 4.6px 0px 0px;
+gap: 0px;
+opacity: 0px;
+
+CRISPY, EVERY BITE TASTE
+
+width: 221px;
+height: 24px;
+top: 774px;
+left: 92px;
+gap: 0px;
+opacity: 0px;
+
+//styleName: Body 1(Semi-bold);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+
+width: 385px;
+height: 36px;
+top: 820px;
+left: 92px;
+gap: 0px;
+opacity: 0px;
+
+//styleName: Heading 2(semi-bold);
+font-family: Montserrat;
+font-size: 32px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
+
+width: 1260px;
+height: 380px;
+top: 929px;
+left: 90px;
+gap: 0px;
+opacity: 0px;
+
+border: 3px solid #EA9E3A
+
+width: 86px;
+height: 0px;
+top: 264px;
+left: 79px;
+gap: 0px;
+border: 3px 0px 0px 0px;
+opacity: 0px;
+
+width: 86px;
+height: 0px;
+top: 264px;
+left: 79px;
+gap: 0px;
+border: 3px 0px 0px 0px;
+opacity: 0px;
+#EA9E3A
+
+width: 244px;
+height: 244px;
+gap: 0px;
+opacity: 0px;
+
+//styleName: Heading 3(Semi-Bold);
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+text-align: center;
+
+width: 129px;
+height: 64px;
+top: 284px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+
+width: 244px;
+height: 348px;
+top: 16px;
+left: 37px;
+gap: 0px;
+opacity: 0px;
+
+width: 1260px;
+height: 380px;
+top: 929px;
+left: 90px;
+gap: 0px;
+opacity: 0px;
+
+<i class="fa-solid fa-arrow-left"></i>
+
+box-shadow: 2px 2px 4px 2px #D9D9D940;
+
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+
+  🔥🎉 BLACK FRIDAY SPECIAL! SAVE 20% TODAY ONLY! 🔥🎉
+
+  //styleName: Body 1(Regular);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+//styleName: Heading 2(semi-bold);
+font-family: Montserrat;
+font-size: 32px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
+
+//styleName: Body 1(Regular);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+width: Hug (146px)px;
+height: Fixed (48px)px;
+padding: 12px 11px 12px 11px;
+gap: 10px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px;
+
+width: 232px;
+height: 224px;
+top: 61px;
+left: 1118px;
+gap: 0px;
+opacity: 0px;
+
+<i class="fa-light fa-heart" style="color: #ffffff;"></i>
+width: 40px;
+height: 40px;
+top: 20px;
+left: 18px;
+gap: 0px;
+opacity: 0px;
