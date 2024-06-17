@@ -186,23 +186,25 @@ nav {
 .indicator-container {
   position: absolute;
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
+  justify-content: space-around;
+  gap: 00.5rem;
   bottom: 10%;
 }
 
-.indicator1 {
-  width: 42px;
+.active-slide {
+  width: 40px;
   height: 8px;
   background-color: #49a62c;
+  border: none;
   border-radius: 5px;
 }
 
-.indicator2 {
+.indicator {
   width: 8px;
   height: 8px;
   background-color: #979797;
   border-radius: 50%;
+  border: none;
 }
 
 .second-section>p,
@@ -452,6 +454,23 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 4rem 0 4rem;
   text-align: left;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.thf-header {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.copyright {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
