@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  /* width: auto; */
+  width: auto;
   height: 11.4375rem;
 }
 
@@ -20,7 +20,8 @@ header {
   height: 2rem;
   margin-left: 4rem;
   color: #433d3d;
-  font-family: "Montserrat",
+  font-family: "Montserrat";
+
 }
 
 .header1_left {
@@ -39,6 +40,7 @@ header {
 
 .vl {
   border-left: 2px solid grey;
+  height: auto;
 }
 
 .header1_right {
@@ -256,19 +258,33 @@ nav {
   align-items: center;
   box-shadow: 2px 2px 4px 2px #d9d9d9;
   border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.slide-content:hover {
+  background-color: #EA9E3A;
+}
+
+.hrLine:hover {
+  background-color: #FFFFFF;
 }
 
 .slide-container {
+  width: 75rem;
   height: 380px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
   margin-left: 4rem;
   margin-right: 4rem;
 }
 
-.second-row-slide {
-  margin-top: 2rem;
+#scrollContent {
+  transition: transform 0.5s ease;
+  display: flex;
+  gap: 5rem;
 }
 
 .slide-head .slide-arrow {
@@ -279,6 +295,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #49a62c;
+
+}
+
+.slide-head .slide-arrow:hover {
+  background-color: #49a62c;
+  color: #ffffff;
 }
 
 .slide-arrow-container {
@@ -391,6 +414,16 @@ h3>del {
   justify-content: space-between;
 }
 
+.second-row-slide {
+  margin-top: 2rem;
+  display: none;
+}
+
+.image-content:hover {
+  background-color: #EA9E3A;
+  border: solid #EA9E3A;
+}
+
 .forth-section button {
   color: #FFFFFF;
   background-color: #433D3D;
@@ -431,11 +464,17 @@ footer {
   margin-right: 4rem;
 }
 
-.second-fsection div:nth-child(2) p {
+.second-fsection div:nth-child(2) p,
+.ptag {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+}
+
+.second-fsection {
+  padding-top: 2rem;
+  text-align: center;
 }
 
 .second-fsection,
