@@ -49,9 +49,9 @@ autoPlay();
 // second section
 let scrollAmount = 0;
 const scrollStep = 356; // Each image width is 356px
-const maxScroll = 1380 - 1200; // (8 images * 300px) - container width
+const maxScroll = 1370 - 1200; // (8 images * 300px) - container width
 
-const content = document.getElementById('scrollContent');
+const content = document.querySelector('.scrollContent');
 
 function scrollLetf() {
     scrollAmount -= scrollStep;
@@ -111,3 +111,29 @@ function adder() {
     }
 
 }
+
+
+    //  phone responsiveness
+
+    var menubar = document.getElementById("menu");
+var dropdown = document.querySelector(".dropdown");
+
+    // get all the css style in the element
+var dropdowncss = window.getComputedStyle(dropdown);
+    
+
+
+    // event listener for the event
+    menubar.addEventListener('click', displayDrop)
+    function displayDrop() {
+        if (dropdowncss.display === "none") {
+            dropdown.style.display = "flex";
+            menubar.classList.remove("fa-bars"); // Remove the original icon class
+            menubar.classList.add("fa-times"); // Add the new icon class
+        } else {
+            dropdown.style.display = "none";
+            menubar.classList.remove("fa-times"); // add the original icon class
+            menubar.classList.add("fa-bars"); // remove the new icon class
+        }
+    }
+

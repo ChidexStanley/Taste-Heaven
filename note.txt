@@ -347,3 +347,154 @@ text-align: left;
 1344
 
 1200
+
+ <div class="slider">
+            <div class="slide"><img src="/public/image/french-flies.png" alt="Image 1"></div>
+            <div class="slide"><img src="/public/image/chicken.png" alt="Image 2"></div>
+            <div class="slide"><img src="/public/image/chicken.png" alt="Image 3"></div>
+            <div class="slide"><img src="/public/image/chicken.png" alt="Image 4"></div>
+            <div class="slide"><img src="/public/image/burger.png" alt="Image 5"></div>
+        </div>
+
+
+// scripts.js
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.querySelector('.dropdown');
+    const dropbtn = document.querySelector('.dropbtn');
+
+    dropbtn.addEventListener('click', function() {
+        dropdown.querySelector('.dropdown-content').classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener('click', function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(function(dropdownContent) {
+                if (dropdownContent.classList.contains('show')) {
+                    dropdownContent.classList.remove('show');
+                }
+            });
+        }
+    });
+});
+
+
+
+var menubar = document.getElementById("menu");
+var dropdown = document.querySelector(".dash-header2");
+
+// get all the css style in the element
+var dropdowncss = window.getComputedStyle(dropdown);
+
+// event listener for the event
+menubar.addEventListener('click', displayDrop)
+
+// function for displaying the dropdown
+function displayDrop() {
+    if (dropdowncss.display === "none") {
+        dropdown.style.display = "block";
+        menubar.classList.remove("fa-bars"); // Remove the original icon class
+        menubar.classList.add("fa-times"); // Add the new icon class
+        console.log("hey");
+    } else {
+        dropdown.style.display = "none";
+        menubar.classList.remove("fa-times"); // add the original icon class
+        menubar.classList.add("fa-bars"); // remove the new icon class
+    }
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid #ccc;
+}
+
+.marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 10s linear infinite;
+}
+
+.slide {
+    flex: none;
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .slide {
+        min-width: 180px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slide {
+        min-width: 160px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        min-width: 140px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slide {
+        min-width: 120px;
+        font-size: 10px;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Effect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="marquee">
+            <div class="slide">Slide 1</div>
+            <div class="slide">Slide 2</div>
+            <div class="slide">Slide 3</div>
+            <div class="slide">Slide 4</div>
+            <div class="slide">Slide 5</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

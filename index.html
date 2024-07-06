@@ -5,62 +5,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taste Heaven</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="public/style.css" />
 </head>
 
 <body>
+
   <header>
-    <div class="header1">
-      <div class="header1_left">
-        <p class="header1_left_p1" style="color: black;">
-          <span class="per">100%</span> Secure delivery
-        </p>
-        <span class="vl"></span>
-        <p style="color: #433d3d;">
-          <i style="color: #433d3d" class="fa fa-search" aria-hidden="true"></i>
-          Search
-        </p>
+    <div class="deskHead">
+      <div class="header1">
+        <div class="header1_left">
+          <p class="header1_left_p1" style="color: black;">
+            <span class="per">100%</span> Secure delivery
+          </p>
+          <span class="vl"></span>
+          <p style="color: #433d3d;">
+            <i style="color: #433d3d" class="fa fa-search" aria-hidden="true"></i>
+            Search
+          </p>
+        </div>
+        <div class="header1_right">
+          <p style="color: #433d3d;">
+            <i class="fa fa-phone" aria-hidden="true" style="color: #433d3d"></i>
+            08167000077
+          </p>
+          <p style="color: #433d3d;">
+            <i class="fa-brands fa-facebook" style="color: #195dd2"></i>
+            Taste_heaven
+          </p style="color: #433d3d;">
+          <p>
+            <i class="fa-brands fa-square-instagram" style="color: #fd0808"></i>
+            Taste_heaven
+          </p>
+        </div>
       </div>
-      <div class="header1_right">
-        <p style="color: #433d3d;">
-          <i class="fa fa-phone" aria-hidden="true" style="color: #433d3d"></i>
-          08167000077
-        </p>
-        <p style="color: #433d3d;">
-          <i class="fa-brands fa-facebook" style="color: #195dd2"></i>
-          Taste_heaven
-        </p style="color: #433d3d;">
-        <p>
-          <i class="fa-brands fa-square-instagram" style="color: #fd0808"></i>
-          Taste_heaven
-        </p>
+
+      <hr />
+
+      <div>
+        <nav>
+          <img src="public/image/logo.png" alt="logo" class="logo" />
+          <div class="links-header">
+            <a href="/" style="color: #49a62c">Home</a>
+            <a href="/">Shop</a>
+            <a href="/">About</a>
+            <a href="/">Contact</a>
+            <div class="count-countainer">
+              <a href="/"><i class="fa-solid fa-cart-shopping" style="color: #433d3d; width: 30px; height: 30px"></i>
+                Cart</a>
+              <div class="count">1</div>
+            </div>
+          </div>
+          <div class="logBtn">
+            <button style="border: #49a62c solid 1px; color: #49a62c;  background-color: #ffff;">Register</button>
+            <button style="border: none; background-color: #49a62c; color: white;">Login</button>
+          </div>
+        </nav>
       </div>
     </div>
-
-    <hr />
-
-    <div>
-      <nav>
-        <img src="public/image/logo.png" alt="logo" class="logo" />
-        <div class="links-header">
-          <a href="/" style="color: #49a62c">Home</a>
-          <a href="/">Shop</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <div class="count-countainer">
-            <a href="/"><i class="fa-solid fa-cart-shopping" style="color: #433d3d; width: 30px; height: 30px"></i>
-              Cart</a>
-            <div class="count">1</div>
-          </div>
+    <div class="phonehead">
+      <div class="phonehead1">
+        <div>
+          <img src="public/image/logo.png" alt="logo" class="logo" />
         </div>
-        <div class="logBtn">
-          <button style="border: #49a62c solid 1px; color: #49a62c;  background-color: #ffff;">Register</button>
-          <button style="border: none; background-color: #49a62c; color: white;">Login</button>
+
+
+        <div>
+          <i class="fa fa-bars fa-2x" id="menu"></i>
         </div>
-      </nav>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">HOME</a>
+        <a href="#" onclick="about_us">ABOUT US</a>
+        <a href="#">SHOP</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">ORDER NOW</a>
+        <a href="#">Register </a>
+        <a href="#">Login</a>
+      </div>
     </div>
   </header>
 
@@ -74,7 +98,7 @@
         <div class="slide">
 
           <div id="content-item1" class="active">
-            <div>
+            <div class="textSlide">
               <h1>Taste the Difference: <span style="color: #EA9E3A;">Welcome to <br>TASTE HEAVEN</span> </h1>
               <h3>Delight your senses with our flavorful dishes, warm atmosphere,<br> and impeccable service. Join us
                 for a memorable dining adventure <br>today.
@@ -88,7 +112,7 @@
           </div>
 
           <div id="content-item2" class="active">
-            <div>
+            <div class="textSlide">
               <h1>EVERY BITE <span style="color: #EA9E3A;">TELLS A STORY<br>TASTE HEAVEN</span> </h1>
               <h3>From mouthwatering dishes to cozy ambiance, experience the perfect <br>blend of flavors and
                 hospitality. Join us for an unforgettable dining <br>journey.
@@ -116,14 +140,14 @@
     <section class="second-section">
       <p>CRISPY, EVERY BITE TASTE</p>
 
-      <div class="slide-head">
+      <div class="slide-head left">
         <h2>POPULAR FOOD ITEMS</h2>
 
         <div class="slide-arrow-container">
-          <div class="slide-arrow" onclick="scrollLetf() ">
+          <div class="slide-arrow" onclick="scrollLetf()">
             <i class="fa-solid fa-arrow-left fa-3x"></i>
           </div>
-          <div class="slide-arrow" onclick="scrollRight()">
+          <div class="slide-arrow" onclick=" scrollRight()">
             <i class="fa-solid fa-arrow-right fa-3x"></i>
           </div>
         </div>
@@ -131,7 +155,8 @@
 
       <div class="slide-container">
 
-        <div id="scrollContent">
+        <div class="scrollContent">
+
           <div class="slide-content">
             <img src="public/image/pizza.png" alt="pizza">
             <div>
@@ -166,18 +191,17 @@
         </div>
       </div>
 
-      <p>HAPPY SPONSORS WITH US</p>
     </section>
 
     <section class="third-section">
-      <div style="margin-left: 4rem;">
+      <div class="third-section1">
         <p>🔥🎉 BLACK FRIDAY SPECIAL! SAVE 20% TODAY ONLY! 🔥🎉</p>
         <h2>A Sizzling Deal <span style="color: #EA9E3A;">You Can't</span> Miss!</h2>
         <p>GRILLED CHIKEN $59,00</p>
         <button><i class="fa-solid fa-bag-shopping"></i> Order Now</button>
       </div>
 
-      <div style="margin-right: 4rem;"><img src="public/image/beef-ruty.png" alt="brrf-ruty"></div>
+      <div class="third-section2"><img src="public/image/beef-ruty.png" alt="brrf-ruty"></div>
     </section>
 
     <section class="forth-section">
@@ -363,24 +387,22 @@
   </main>
 
   <footer>
-    <section class="first-footer">
-      <div class="first-fsection">
-        <div class="ff-left">
-          <img src="public/image/kfc.png" alt="kfc">
-        </div>
 
-        <div class="ff-content">
-          <p style="margin: 0;">CRISPY, EVERY BITE TASTE</p>
-          <h2>TASTE HEAVEN CHIKEN HOT <br>WING & FRENCH FRIES</h2>
-          <button><i class="fa-solid fa-bag-shopping"></i> Order Now</button>
-        </div>
+    <div class="first-fsection">
+      <div class="ff-left">
+        <img src="public/image/kfc.png" alt="kfc">
       </div>
-    </section>
+
+      <div class="ff-content">
+        <p style="margin: 0;">CRISPY, EVERY BITE TASTE</p>
+        <h2>TASTE HEAVEN CHIKEN HOT WING & FRENCH FRIES</h2>
+        <button><i class="fa-solid fa-bag-shopping"></i> Order Now</button>
+      </div>
+    </div>
 
     <section class="second-fsection">
       <div>
-        <p>What our clients say about us</p>
-        <h2>POPULAR FOOD ITEMS</h2>
+        <h2>What our clients say about us</h2>
       </div>
       <div>
         <p>
@@ -388,40 +410,43 @@
           SOME TIME. WILL DEFINITELY BE SEEING MORE EATING REGULARLY.”
         </p>
         <img src="public/image/ceo.jpeg" alt="ceo">
-        <p><span style="color: #EA9E3A;">Peter Bowman</span><br>Avatech CEO & Co Founder</p>
+        <p><span style="color: #EA9E3A;">Peter Bowman</span></p>
+        <p style="margin-top: -1rem;">CEO & Co Founder</p>
       </div>
     </section>
 
     <section class="third-fsection">
-      <div class="thf-body thf-header">
-        <img class="logo" src="public/image/logo.png" alt="logo">
-        <p>Quick Links</p>
-        <p>Address</p>
-        <p style="margin-right: 12rem;">Install App</p>
-      </div>
       <div class="thf-body">
         <div>
+          <img class="logo" src="public/image/logo.png" alt="logo">
           <p>
             We believe it has the power to do <br>amazing things.
           </p>
           <p>Interested in working with us?</p>
           <p class="ptag">info@example.com</p>
         </div>
+
         <div>
+          <p class="ptag">Quick Links</p>
           <p>Latest Food</p>
           <p>My Account</p>
         </div>
+
         <div>
+          <p class="ptag">Address</p>
           <p>570 8th Ave, New York, NY 10018 <br> United States</p>
           <p class="ptag">Hours:</p>
           <p>9.30am - 6.30pm</p>
           <p>Monday To Friday</p>
         </div>
+
         <div>
+          <p class="ptag">Install App</p>
           <p>FROM APP STORE OR GOOGLE PLAY</p>
           <img src="public/image/apple-logo.png" alt="apple-logo">
           <img src="public/image/googl-play.png" alt="googl-play">
         </div>
+
       </div>
       <div class="copyright">
         <p>© Copyright 2024 Taste Heaven. All Rights Reserved.</p>
