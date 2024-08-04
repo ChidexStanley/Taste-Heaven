@@ -244,7 +244,9 @@ nav {
   font-weight: 600;
 }
 
-.slide-content>img {
+/* bvsidon */
+
+.contents>img {
   width: 244px;
   height: 244px;
 }
@@ -256,7 +258,7 @@ nav {
   border-radius: 3px;
 }
 
-.slide-content>h3 {
+.contents>h3 {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
@@ -264,7 +266,7 @@ nav {
   text-align: center;
 }
 
-.slide-content {
+.contents {
   height: 348px;
   display: flex;
   flex-direction: column;
@@ -275,7 +277,7 @@ nav {
   padding-right: 1rem;
 }
 
-.slide-content:hover {
+.contents:hover {
   background-color: #EA9E3A;
 }
 
@@ -283,23 +285,12 @@ nav {
   background-color: #FFFFFF;
 }
 
-.slide-container {
-  max-width: 75rem;
-  height: 380px;
+.contentContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-.scrollContent {
-  display: flex;
-  gap: 5rem;
-  justify-content: center;
-  max-width: 75rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .slide-head .slide-arrow {
@@ -335,8 +326,10 @@ nav {
 .second-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .third-section {
@@ -435,8 +428,10 @@ h3>del {
   line-height: 24px;
 }
 
+/* forth section */
+
 .first-row-slide {
-  margin-left: 5rem;
+  margin-left: 2rem;
   display: flex;
   flex-wrap: wrap;
   margin-right: 5rem;
@@ -457,6 +452,15 @@ h3>del {
 .forth-section button {
   color: #FFFFFF;
   background-color: #433D3D;
+}
+
+.forth-section p {
+  text-align: center;
+  margin: 0;
+}
+
+.forth-section h2 {
+  text-align: center;
 }
 
 /* footer */
@@ -611,9 +615,17 @@ footer {
     justify-content: center;
   }
 
-  .slide-content>img {
+  .contents>img {
     width: 200px;
     height: 200px;
+  }
+
+  .second-section {
+    text-align: start;
+  }
+
+  .second-section>p {
+    margin-left: 0;
   }
 
   /* third section */
@@ -627,6 +639,7 @@ footer {
     justify-content: normal;
     align-items: normal;
     text-align: left;
+    width: 93.5%;
   }
 
   .third-section1 {
@@ -648,12 +661,21 @@ footer {
     margin: 0;
   }
 
+  /* fouth-section */
+
+  .forth-section p,
+  .forth-section h2 {
+    text-align: start;
+    margin: 2rem;
+  }
+
+  .forth-section .btn2 {
+    display: block;
+    margin: 2rem;
+  }
 
   /* footer */
 
-  footer {
-    margin-left: 0.5rem;
-  }
 
   .ff-left {
     height: 20rem;
@@ -690,7 +712,11 @@ footer {
   .thf-body {
     flex-direction: column;
     align-items: start;
+  }
 
+  .second-fsection,
+  .third-fsection {
+    padding-left: 1rem;
   }
 }
 
