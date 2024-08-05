@@ -498,3 +498,50 @@ body {
     <script src="script.js"></script>
 </body>
 </html>
+
+animate__backInRight
+
+https://vzmzg52z-5500.uks1.devtunnels.ms/
+
+   function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        }
+
+        // Function to add the visible class when elements are in the viewport
+        function animateOnScroll() {
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach(element => {
+                if (isInViewport(element)) {
+                    element.classList.add('visible');
+                    element.classList.remove('hidden');
+                }
+            });
+        }
+
+        // Listen for scroll events
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Initial check in case elements are already in the viewport
+        animateOnScroll();
+
+        .anim {
+    opacity: 0;
+    transform: translateY(30px);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: move-up 0.5s linear 0.3s 1 forwards;
+}
+
+@keyframes move-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

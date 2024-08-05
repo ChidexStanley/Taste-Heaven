@@ -16,8 +16,6 @@ let slideIndex = 1;
 
 const slide = (n) => {
 
-    console.log('This function runs every 3 seconds');
-
     slideIndex += n;
     if (slideIndex >= ItemArray.length) {
         slideIndex = 0;
@@ -36,14 +34,14 @@ const slide = (n) => {
     indicators[slideIndex].className = "active-slide"
 }
 
-prev.addEventListener("click", () => { slide(-1); clearInterval(myInterval); myInterval = setInterval(autoPlay, 4000) })
-next.addEventListener("click", () => { slide(1); clearInterval(myInterval); myInterval = setInterval(autoPlay, 4000) })
+prev.addEventListener("click", () => { slide(-1); clearInterval(myInterval); myInterval = setInterval(autoPlay, 6000) })
+next.addEventListener("click", () => { slide(1); clearInterval(myInterval); myInterval = setInterval(autoPlay, 6000) })
 
 
 function autoPlay() {
     slide(1); // Move to the next slide  
 }
-let myInterval = setInterval(autoPlay, 4000) // Change image every 4 seconds
+let myInterval = setInterval(autoPlay, 6000) // Change image every 4 seconds
 autoPlay();
 
 //view more
@@ -111,6 +109,89 @@ function displayDrop() {
         dropdown.style.display = "none";
         menubar.classList.remove("fa-times"); // add the original icon class
         menubar.classList.add("fa-bars"); // remove the new icon class
+    }
+}
+
+// animation part 
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
+// Function to add the visible class when elements are in the viewport
+function animateOnScroll() {
+    const hiddenElements = document.querySelectorAll('.animate');
+    hiddenElements.forEach(element => {
+        if (isInViewport(element)) {
+            element.classList.add('animUp');
+        }
+    });
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', animateOnScroll);
+
+// Initial check in case elements are already in the viewport
+animateOnScroll();
+
+// links in the heading
+var home_id = document.querySelector(".home");
+var abt_id = document.querySelector(".abt");
+var shop_id = document.querySelector(".shop");
+var contact_id = document.querySelector(".contact");
+
+
+function toggle(link) {
+    const viewportWidth = window.innerWidth;
+
+    var phead = document.querySelector(".phonehead");
+    var main = document.querySelector("main");
+    var main1 = document.querySelector(".first-section");
+    var main2 = document.querySelector(".second-section");
+    var main3 = document.querySelector(".third-section");
+    var main4 = document.querySelector(".forth-section");
+    var footer = document.querySelector("footer");
+
+    if (link == 1) {
+        if (viewportWidth >= 768) {
+            phead.style.display = "none";
+        }
+        main.style.display = "block";
+        main1.style.display = "none";
+        main2.style.display = "block";
+        main3.style.display = "flex";
+        main4.style.display = "block";
+        footer.style.display = "block";
+        abt_id.classList.add("active");
+        home_id.classList.remove("active");
+        shop_id.classList.remove("active");
+        contact_id.classList.remove("active");
+    }
+    if (link == 2) {
+        if (viewportWidth >= 768) {
+            phead.style.display = "none";
+        }
+        main.style.display = "block";
+        main1.style.display = "none";
+        main2.style.display = "none";
+        main3.style.display = "flex";
+        main4.style.display = "block";
+        footer.style.display = "none";
+        home_id.classList.remove("active");
+        abt_id.classList.remove("active");
+        shop_id.classList.add("active");
+        contact_id.classList.remove("active");
+    }
+    if (link == 3) {
+        main.style.display = "none";
+        footer.style.display = "block";
+        home_id.classList.remove("active");
+        abt_id.classList.remove("active");
+        shop_id.classList.remove("active");
+        contact_id.classList.add("active");
     }
 }
 
